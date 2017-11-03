@@ -117,6 +117,7 @@ add_action( 'widgets_init', 'pomme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pomme_scripts() {
+	wp_enqueue_style( 'pomme-google-fonts', pomme_google_fonts() );
 	wp_enqueue_style( 'pomme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'pomme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -128,6 +129,40 @@ function pomme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'pomme_scripts' );
+
+/**
+ * Enqueue Google fonts
+ */
+function pomme_google_fonts() {
+	$fonts = array();
+	$fonts_url = '';
+
+	/* translators: If there are characters in your language that are not supported by Catamaran, translate this to 'off'. Do not translate into your own language. */
+	if ( 'off' !== _x( 'on', 'Catamaran font: on or off', 'pomme' ) ) {
+		$fonts[] = 'Catamaran:300,700,900';
+	}
+
+	/* translators: If there are characters in your language that are not supported by Crimson Text, translate this to 'off'. Do not translate into your own language. */
+	if ( 'off' !== _x( 'on', 'Crimson Text font: on or off', 'pomme' ) ) {
+		$fonts[] = 'Crimson Text:400,400i,700,700i';
+	}
+
+	/* translators: If there are characters in your language that are not supported by Inconsolata, translate this to 'off'. Do not translate into your own language. */
+	if ( 'off' !== _x( 'on', 'Inconsolata font: on or off', 'pomme' ) ) {
+		$fonts[] = 'Inconsolata';
+	}
+
+	if ( $fonts ) {
+		$query_args = array(
+			'family' => urlencode( implode( '|', $fonts ) ),
+			'subset' => 'latin,latin-ext'
+		);
+
+		$fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+	}
+
+	return esc_url_raw( $fonts_url );
+}
 
 /**
  * Implement the Custom Header feature.
@@ -155,4 +190,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

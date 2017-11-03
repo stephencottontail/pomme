@@ -1,13 +1,13 @@
 module.exports = function(grunt) {
 	var path = process.cwd();
 	var cwd = path.substring( path.lastIndexOf( '/' ) + 1 );
-	
+
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		cwd: cwd,
 		copy: {
 			main: {
-				files: [ 
+				files: [
 					{ expand: true, src: 'README.md', rename: function( dest, src ) { return src.replace( '.md', '.txt' ); } }
 				]
 			},
@@ -22,8 +22,6 @@ module.exports = function(grunt) {
 				options: {
 					style: 'nested',
 					sourcemap: 'auto',
-					loadPath: path + '/sass/normalize',
-					// update: true
 				},
 				files: [ {
 					'style.css' : 'sass/style.scss',
@@ -35,8 +33,6 @@ module.exports = function(grunt) {
 				options: {
 					style: 'compact',
 					sourcemap: 'none',
-					loadPath: path + '/sass/normalize',
-					// update: true
 				},
 				files: [ {
 					'style.css' : 'sass/style.scss',

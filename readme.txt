@@ -1,38 +1,6 @@
-=== Pomme ===
+# Pomme
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+## Resources
 
-Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-
-A starter theme called Pomme.
-
-== Description ==
-
-Pomme is a cool theme made by a cool dude.
-
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-Pomme includes support for Infinite Scroll in Jetpack.
-
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
-
-== Credits ==
-
-* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+* Pomme itself is based on [Underscores], which is copyright Automattic, Inc., and licensed under the [GPL, v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
+* [Catamaran](https://fonts.google.com/specimen/Catamaran) is copyright Pria Ravichandran, [Crimson Text](https://fonts.google.com/specimen/Crimson+Text) is copyright Sebastian Kosch, and [Inconsolata](https://fonts.google.com/specimen/Inconsolata) is copyright Raph Levien. All fonts are licensed under the [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web).
