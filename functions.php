@@ -117,6 +117,7 @@ add_action( 'widgets_init', 'pomme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pomme_scripts() {
+	wp_enqueue_style( 'bootstrap', get_theme_file_uri( 'inc/css/bootstrap.css' ) );
 	wp_enqueue_style( 'pomme-google-fonts', pomme_google_fonts() );
 	wp_enqueue_style( 'pomme-style', get_stylesheet_uri() );
 

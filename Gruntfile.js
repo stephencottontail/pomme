@@ -26,7 +26,8 @@ module.exports = function(grunt) {
 				files: [ {
 					'style.css' : 'sass/style.scss',
 					'rtl.css' : 'sass/rtl.scss',
-					'inc/css/editor-style.css' : 'sass/editor-style.scss'
+					'inc/css/editor-style.css' : 'sass/editor-style.scss',
+					'inc/css/bootstrap.css' : 'sass/bootstrap.scss'
 				} ]
 			},
 			prepare: {
@@ -38,12 +39,13 @@ module.exports = function(grunt) {
 					'style.css' : 'sass/style.scss',
 					'rtl.css' : 'sass/rtl.scss',
 					'inc/css/editor-style.css' : 'sass/editor-style.scss',
+					'inc/css/bootstrap.css' : 'sass/bootstrap.scss'
 				} ]
 			}
 		},
 		postcss: {
 			options: {
-      		map: false,
+      	map: false,
 				processors: [
 					require( 'autoprefixer' )( {
 						browsers: [ '> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1' ]
@@ -51,7 +53,7 @@ module.exports = function(grunt) {
 				]
     	},
     	dist: {
-	    		src: [ 'style.css', 'rtl.css', 'inc/css/editor-style.css' ]
+	    	src: [ 'style.css', 'rtl.css', 'inc/css/editor-style.css', 'inc/css/bootstrap.css' ]
     	}
 		},
 		watch: {
