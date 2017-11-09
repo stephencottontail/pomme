@@ -13,3 +13,69 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 /**
  * Note to self: The CSS reset is in `bootstrap.css`
  */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
+  .screen-reader-text:active, .screen-reader-text:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    -webkit-clip-path: none;
+            clip-path: none; }
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0; }
+
+.sticky {
+  /* required for theme review */ }
+
+.bypostauthor {
+  /* required for theme review */ }
+
+.alignnone {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto; }
+
+.aligncenter {
+  display: block;
+  margin: 0.5rem 0;
+  max-width: 100%;
+  height: auto; }
+
+.alignleft {
+  margin-bottom: 0.5rem;
+  height: auto; }
+  @media (min-width: 576px) {
+    .alignleft {
+      float: left;
+      margin-right: 0.5rem; } }
+
+.alignright {
+  margin-bottom: 0.5rem;
+  height: auto; }
+  @media (min-width: 576px) {
+    .alignright {
+      float: right;
+      margin-left: 0.5rem; } }
+
+.wp-caption {
+  margin: 0;
+  max-width: 100%;
+  height: auto; }
+
+.wp-caption-text {
+  color: #868e96; }

@@ -1,0 +1,56 @@
+.screen-reader-text {
+  @include sr-only;
+  @include sr-only-focusable;
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+.sticky { /* required for theme review */ }
+.bypostauthor { /* required for theme review */ }
+
+.alignnone {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: map-get( $spacers, 2 ) 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.alignleft {
+  margin-bottom: map-get( $spacers, 2 );
+  height: auto;
+
+  @include media-breakpoint-up(sm) {
+    float: left;
+    margin-right: map-get( $spacers, 2 );
+  }
+}
+
+.alignright {
+  margin-bottom: map-get( $spacers, 2 );
+  height: auto;
+
+  @include media-breakpoint-up(sm) {
+    float: right;
+    margin-left: map-get( $spacers, 2 );
+  }
+}
+
+.wp-caption {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.wp-caption-text {
+  color: $text-muted;
+}
