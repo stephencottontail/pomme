@@ -1,3 +1,28 @@
 $serif: "Crimson Text", "Georgia", serif;
 $sans: "Catamaran", "Helvetica Neue", sans-serif;
 $monospace: "Inconsolata", "Courier New", monospace;
+
+$white:  #f9f9f9;
+$black:  #151515;
+$red:    #a42a35;
+$blue:   #125171;
+$indigo: #32b0f0;
+$purple: #570e14;
+$yellow: #b1a3df;
+
+$primary: $red;
+$light:   $white;
+$dark:    $black;
+
+$body-bg:    $white;
+$body-color: $black;
+$code-color: $black;
+
+$link-decoration: underline;
+
+$grid-gutter-width: 1rem;
+
+$font-family-sans-serif: $sans;
+$font-family-monospace:  $monospace;
+$font-family-base:       $font-family-sans-serif;
+$headings-font-family:   $serif;

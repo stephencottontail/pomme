@@ -11,4 +11,11 @@ Text Domain: pomme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
-@import 'variables';
+/**
+ * Note to self: The CSS reset is in `bootstrap.css`
+ */
+
+@import "variables";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
