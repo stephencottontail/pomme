@@ -11,28 +11,21 @@
 
 ?>
 
-	</div><!-- #content -->
-</div><!-- .container.masonry-container -->
-
-<div class="container">
-  <?php /* pomme_get_navigation(); */ ?>
-</div>
-
-<div class="container">
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pomme' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'pomme' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'pomme' ), 'pomme', '<a href="http://stephencottontail.com/">Stephen Dickinson</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- .container -->
+	<div class="container">
+		<footer id="colophon" class="site-footer">
+			<div class="site-info">
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pomme' ) ); ?>"><?php
+					/* translators: %s: CMS name, i.e. WordPress. */
+					printf( esc_html__( 'Proudly powered by %s', 'pomme' ), 'WordPress' );
+				?></a>
+				<span class="sep"> | </span>
+				<?php
+					/* translators: 1: Theme name, 2: Theme author. */
+					printf( esc_html__( 'Theme: %1$s by %2$s.', 'pomme' ), 'pomme', '<a href="http://stephencottontail.com/">Stephen Dickinson</a>' );
+				?>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- .container -->
 
 <?php wp_footer(); ?>
 

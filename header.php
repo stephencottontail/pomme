@@ -22,8 +22,6 @@
 
 <body <?php body_class(); ?>>
 <div class="container masonry-container">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pomme' ); ?></a>
-
 	<header id="masthead" class="site-branding stamp">
 		<?php
 		if ( is_front_page() && is_home() ) : ?>
@@ -48,5 +46,3 @@
 		) );
 		?>
 	</nav><!-- #site-navigation -->
-		
-	<div id="content" class="site-content">
