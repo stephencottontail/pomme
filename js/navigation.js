@@ -4,7 +4,16 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-( function() {
+jQuery( document ).ready( function( $ ) {
+	var masonryContainer = $( '.masonry-container' );
+	if ( masonryContainer ) {
+		masonryContainer.masonry( {
+			stamp: '.stamp',
+			horizontalOrder: true,
+			percentPosition: true
+		} );
+	}
+	
 	var container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
@@ -103,4 +112,4 @@
 			}
 		}
 	}( container ) );
-} )();
+} )( jQuery );

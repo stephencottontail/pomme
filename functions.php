@@ -121,7 +121,8 @@ function pomme_scripts() {
 	wp_enqueue_style( 'pomme-google-fonts', pomme_google_fonts() );
 	wp_enqueue_style( 'pomme-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'pomme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'jquery-masonry' );
+	wp_enqueue_script( 'pomme-functions', get_theme_file_uri( '/js/navigation.js' ), array(), null, true );
 
 	wp_enqueue_script( 'pomme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

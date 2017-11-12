@@ -12,7 +12,13 @@
 ?>
 
 	</div><!-- #content -->
+</div><!-- .container.masonry-container -->
 
+<div class="container">
+  <?php /* pomme_get_navigation(); */ ?>
+</div>
+
+<div class="container">
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pomme' ) ); ?>"><?php
@@ -26,7 +32,7 @@
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+</div><!-- .container -->
 
 <?php wp_footer(); ?>
 
