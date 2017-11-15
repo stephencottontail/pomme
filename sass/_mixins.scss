@@ -1,0 +1,18 @@
+@mixin big-red-box() {
+	background-color: theme-color( 'primary' );
+	border: 1px solid theme-color( 'primary' );
+	box-shadow: 4px 4px 2px rgba( theme-color( 'dark' ), 0.25 );
+	color: theme-color( 'light' );
+	padding: map-get( $spacers, 3 );
+	transition: $transition-base;
+	
+	&:focus,
+	&:hover {
+		background-color: theme-color-level( 'primary', 1 );
+		border-color: theme-color-level( 'primary', 1 );
+	}
+	
+	a {
+		color: theme-color( 'light' );
+	}
+}

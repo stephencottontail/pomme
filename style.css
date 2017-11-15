@@ -13,6 +13,25 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 /**
  * Note to self: The CSS reset is in `bootstrap.css`
  */
+.masonry-brick,
+.masonry-stamp {
+  background-color: #a42a35;
+  border: 1px solid #a42a35;
+  -webkit-box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25);
+          box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25);
+  color: #f9f9f9;
+  padding: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .masonry-brick:focus, .masonry-brick:hover,
+  .masonry-stamp:focus,
+  .masonry-stamp:hover {
+    background-color: #972731;
+    border-color: #972731; }
+  .masonry-brick a,
+  .masonry-stamp a {
+    color: #f9f9f9; }
+
 .screen-reader-text {
   position: absolute;
   width: 1px;

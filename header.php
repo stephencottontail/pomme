@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div class="container masonry-container">
-	<header id="masthead" class="site-branding stamp">
+	<header id="masthead" class="site-branding masonry-stamp">
 		<?php
 		if ( is_front_page() && is_home() ) : ?>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -37,7 +37,7 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 
-	<nav id="site-navigation" class="main-navigation stamp">
+	<nav id="site-navigation" class="main-navigation masonry-stamp">
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pomme' ); ?></button>
 		<?php
 		wp_nav_menu( array(

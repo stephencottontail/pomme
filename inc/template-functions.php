@@ -22,6 +22,25 @@ function pomme_body_classes( $classes ) {
 add_filter( 'body_class', 'pomme_body_classes' );
 
 /**
+ * Adds custom classes to the array of post classes.
+ *
+ * @param array $classes Classes for <article> elements.
+ * @return array
+ */
+function pomme_post_classes( $classes ) {
+	if ( is_archive() ) {
+		$classes[] = 'masonry-brick';
+	}
+	
+	if ( is_singular() ) {
+		$classes[] = 'single-masonry-brick';
+	}
+	
+	return $classes;
+}
+add_filter( 'post_class', 'pomme_post_classes' );
+
+/**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
 function pomme_pingback_header() {
