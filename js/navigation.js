@@ -7,10 +7,15 @@
 jQuery( document ).ready( function( $ ) {
 	var masonryContainer = $( '.masonry-container' );
 	if ( masonryContainer ) {
-		masonryContainer.masonry( {
-			stamp: '.stamp',
-			horizontalOrder: true,
-			percentPosition: true
+		masonryContainer.imagesLoaded( function() {
+			masonryContainer.masonry( {
+				itemSelector: '.masonry-brick',
+				columnWidth: '.masonry-brick',
+				stamp: '.masonry-stamp',
+				gutter: '.gutter-sizer',
+				horizontalOrder: true,
+				percentPosition: true
+			} );
 		} );
 	}
 	

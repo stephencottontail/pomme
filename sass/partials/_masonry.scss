@@ -1,4 +1,26 @@
-.masonry-brick,
-.masonry-stamp {
-	@include big-red-box;
+.masonry-container {
+	padding: 0;
+}
+
+.masonry-brick {
+	@include make-col-ready;
+	
+	padding: 1rem;
+	
+	@include media-breakpoint-up(md) {
+		@include make-col( 6 );
+	}
+	
+	@include media-breakpoint-up(lg) {
+		@include make-col( 4 );
+	}
+	
+	@include media-breakpoint-up(xl) {
+		@include make-col( 4 );
+	}
+}
+
+.gutter-sizer {
+	display: none;
+	width: map-get( $spacers, 2 );
 }

@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div class="container masonry-container">
+	<div class="gutter-sizer"></div>
 	<header id="masthead" class="site-branding masonry-stamp">
 		<?php
 		if ( is_front_page() && is_home() ) : ?>
