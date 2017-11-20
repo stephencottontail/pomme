@@ -1,0 +1,54 @@
+.archive-masonry {
+	@include big-red-box;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-position: center center;
+	background-size: cover;
+	border-color: transparent;
+	box-shadow: none;
+	position: relative;
+	
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba( theme-color( 'dark' ), 0.25 );
+	}
+	
+	.entry-header {
+		position: relative;
+		flex: 0 0 60%;
+		margin-top: map-get( $spacers, 5 );
+		text-align: center;
+		word-break: break-word;
+		z-index: 10;
+		
+		@include media-breakpoint-up(md) {
+			flex-basis: 40%;
+		}
+	}
+	
+	.entry-title {
+		font-family: $font-family-base;
+		font-size: $font-size-lg;
+		font-weight: bold;
+		margin: 0;
+	}
+	
+	.entry-date {
+		display: block;
+		font-size: $font-size-sm;
+	}
+	
+	a {
+		text-decoration: none;
+		
+		@include hover {
+			text-decoration: underline;
+		}
+	}
+}

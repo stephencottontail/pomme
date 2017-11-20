@@ -20,6 +20,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .gutter-sizer { display: none; width: 0.5rem; }
 
+.archive-masonry { background-color: #a42a35; border: 1px solid #a42a35; box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25); color: #f9f9f9; padding: 1rem; transition: all 0.2s ease-in-out; display: flex; align-items: flex-end; justify-content: flex-end; background-position: center center; background-size: cover; border-color: transparent; box-shadow: none; position: relative; }
+.archive-masonry:focus, .archive-masonry:hover { background-color: #972731; border-color: #972731; }
+.archive-masonry a { color: #f9f9f9; }
+.archive-masonry .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(21, 21, 21, 0.25); }
+.archive-masonry .entry-header { position: relative; flex: 0 0 60%; margin-top: 3rem; text-align: center; word-break: break-word; z-index: 10; }
+@media (min-width: 768px) { .archive-masonry .entry-header { flex-basis: 40%; } }
+.archive-masonry .entry-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 1.25rem; font-weight: bold; margin: 0; }
+.archive-masonry .entry-date { display: block; font-size: 0.875rem; }
+.archive-masonry a { text-decoration: none; }
+.archive-masonry a:hover { text-decoration: underline; }
+
 .screen-reader-text { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); border: 0; }
 .screen-reader-text:active, .screen-reader-text:focus { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; clip-path: none; }
 
