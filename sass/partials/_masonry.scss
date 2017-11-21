@@ -5,7 +5,7 @@
 .masonry-brick {
 	@include make-col-ready;
 	
-	padding: 1rem;
+	padding: $spacer;
 	
 	@include media-breakpoint-up(md) {
 		@include make-col( 6 );

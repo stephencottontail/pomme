@@ -1,0 +1,48 @@
+.main-navigation {
+	@include make-col-ready;
+	
+	padding: $spacer;
+	
+	@include media-breakpoint-up(md) {
+		@include make-col(4);
+	
+		position: absolute;
+		left: 0;
+	}
+	
+	ul {
+		list-style: none;
+		margin: map-get( $spacers, 2 ) 0;
+		padding: 0;
+		text-transform: uppercase;
+		
+		ul {
+			margin: 0;
+			text-transform: lowercase;
+		}
+	}
+
+	a {
+		display: block;
+		padding: map-get( $spacers, 2 ) 0;
+		font-weight: bold;
+		text-decoration: none;
+		transition: $transition-base;
+	}
+}
+
+.menu-toggle {
+	appearance: none;
+	background-color: theme-color-level( 'light', 1 );
+	border: none;
+	transition: $transition-base;
+	width: 100%;
+	
+	@include hover {
+		background-color: theme-color-level( 'light', 2 );
+	}
+	
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+}

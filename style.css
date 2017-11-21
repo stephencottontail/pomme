@@ -31,14 +31,21 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .archive-masonry a { text-decoration: none; }
 .archive-masonry a:hover { text-decoration: underline; }
 
-.site-branding { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; text-align: center; }
+.site-branding { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
 @media (min-width: 768px) { .site-branding { flex: 0 0 66.66667%; max-width: 66.66667%; position: absolute; right: 0; text-align: right; } }
 .site-branding a { text-decoration: none; font-weight: bold; letter-spacing: -1px; }
 
-.site-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 4.5rem; font-weight: bold; letter-spacing: -1px; }
+.site-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 4.5rem; font-weight: bold; letter-spacing: -2px; margin: 0; }
 
-.main-navigation { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; }
+.main-navigation { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; }
 @media (min-width: 768px) { .main-navigation { flex: 0 0 33.33333%; max-width: 33.33333%; position: absolute; left: 0; } }
+.main-navigation ul { list-style: none; margin: 0.5rem 0; padding: 0; text-transform: uppercase; }
+.main-navigation ul ul { margin: 0; text-transform: lowercase; }
+.main-navigation a { display: block; padding: 0.5rem 0; font-weight: bold; text-decoration: none; transition: all 0.2s ease-in-out; }
+
+.menu-toggle { appearance: none; background-color: #e5e5e5; border: none; transition: all 0.2s ease-in-out; width: 100%; }
+.menu-toggle:hover { background-color: #d1d1d1; }
+@media (min-width: 768px) { .menu-toggle { display: none; } }
 
 .screen-reader-text { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); border: 0; }
 .screen-reader-text:active, .screen-reader-text:focus { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; clip-path: none; }
