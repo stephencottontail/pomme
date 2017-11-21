@@ -31,7 +31,7 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 
-	<nav id="site-navigation" class="main-navigation masonry-stamp">
+	<nav id="main-navigation" class="site-navigation masonry-stamp">
 		<button class="menu-toggle p-2" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pomme' ); ?></button>
 		<?php
 		wp_nav_menu( array(

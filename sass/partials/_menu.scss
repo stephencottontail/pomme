@@ -1,4 +1,4 @@
-.main-navigation {
+.site-navigation {
 	@include make-col-ready;
 	
 	padding: $spacer;
@@ -11,14 +11,23 @@
 	}
 	
 	ul {
+		display: none;
 		list-style: none;
 		margin: map-get( $spacers, 2 ) 0;
 		padding: 0;
 		text-transform: uppercase;
 		
+		.menu-active & {
+			display: block;
+		}
+		
 		ul {
 			margin: 0;
 			text-transform: lowercase;
+		}
+		
+		@include media-breakpoint-up(md) {
+			display: block;
 		}
 	}
 

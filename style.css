@@ -37,11 +37,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .site-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 4.5rem; font-weight: bold; letter-spacing: -2px; margin: 0; }
 
-.main-navigation { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; }
-@media (min-width: 768px) { .main-navigation { flex: 0 0 33.33333%; max-width: 33.33333%; position: absolute; left: 0; } }
-.main-navigation ul { list-style: none; margin: 0.5rem 0; padding: 0; text-transform: uppercase; }
-.main-navigation ul ul { margin: 0; text-transform: lowercase; }
-.main-navigation a { display: block; padding: 0.5rem 0; font-weight: bold; text-decoration: none; transition: all 0.2s ease-in-out; }
+.site-navigation { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; }
+@media (min-width: 768px) { .site-navigation { flex: 0 0 33.33333%; max-width: 33.33333%; position: absolute; left: 0; } }
+.site-navigation ul { display: none; list-style: none; margin: 0.5rem 0; padding: 0; text-transform: uppercase; }
+.menu-active .site-navigation ul { display: block; }
+.site-navigation ul ul { margin: 0; text-transform: lowercase; }
+@media (min-width: 768px) { .site-navigation ul { display: block; } }
+.site-navigation a { display: block; padding: 0.5rem 0; font-weight: bold; text-decoration: none; transition: all 0.2s ease-in-out; }
 
 .menu-toggle { appearance: none; background-color: #e5e5e5; border: none; transition: all 0.2s ease-in-out; width: 100%; }
 .menu-toggle:hover { background-color: #d1d1d1; }
