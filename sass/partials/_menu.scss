@@ -3,11 +3,16 @@
 	
 	padding: $spacer;
 	
-	@include media-breakpoint-up(md) {
-		@include make-col(4);
+
 	
-		position: absolute;
-		left: 0;
+	.single & {
+		@include media-breakpoint-up(md) {
+			@include make-col(4);
+	
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 	
 	ul {

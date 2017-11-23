@@ -5,6 +5,7 @@
  * navigation support for dropdown menus.
  */
 jQuery( document ).ready( function( $ ) {
+	var body = $( 'body' );
 	var masonryContainer = $( '.masonry-container' );
 	var masonryArgs = {
 		itemSelector: '.masonry-brick',
@@ -14,14 +15,13 @@ jQuery( document ).ready( function( $ ) {
 		horizontalOrder: true,
 		percentPosition: true
 	};
-	
-	if ( masonryContainer ) {
+
+	if ( masonryContainer & ! body.hasClass( 'single' ) ) {
 		masonryContainer.imagesLoaded( function() {
 			masonryContainer.masonry( masonryArgs );
 		} );
 	}
 	
-	var body = $( 'body' );
 	var menuContainer = $( '.site-navigation' );
 	var menu = menuContainer.find( 'ul' );
 	var button = $( '.menu-toggle' );

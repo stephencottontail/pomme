@@ -27,7 +27,7 @@
 		word-break: break-word;
 		z-index: 10;
 		
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up( md ) {
 			flex-basis: 40%;
 		}
 	}
@@ -50,5 +50,16 @@
 		@include hover {
 			text-decoration: underline;
 		}
+	}
+}
+
+.single-masonry-brick {
+	@include make-col-ready;
+
+	padding: $spacer;
+	
+	@include media-breakpoint-up( md ) {
+		@include make-col-offset( 4 );
+		@include make-col( 8 );
 	}
 }
