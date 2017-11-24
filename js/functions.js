@@ -17,7 +17,6 @@ jQuery( document ).ready( function( $ ) {
 
 	if ( masonryContainer ) {
 		masonryContainer.imagesLoaded( function() {
-			console.log( 'hj' );
 			masonryContainer.masonry( masonryArgs );
 		} );
 	}
