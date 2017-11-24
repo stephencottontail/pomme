@@ -6,10 +6,8 @@
 	
 	@include media-breakpoint-up(md) {
 		@include make-col(8);
-	
-		position: absolute;
-		right: 0;
-		text-align: right;
+		
+		text-align: left;
 	}
 	
 	a {

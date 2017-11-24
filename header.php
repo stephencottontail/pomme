@@ -23,7 +23,8 @@
 <body <?php body_class(); ?>>
 <div class="container masonry-container">
 	<div class="gutter-sizer"></div>
-	<header id="masthead" class="site-branding masonry-stamp">
+	<div class="brick-sizer"></div>
+	<header id="masthead" class="site-branding masonry-brick">
 		<?php if ( is_front_page() && is_home() ) : ?>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php else : ?>
@@ -31,7 +32,7 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 
-	<nav id="main-navigation" class="site-navigation masonry-stamp">
+	<nav id="main-navigation" class="site-navigation masonry-brick">
 		<button class="menu-toggle p-2" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pomme' ); ?></button>
 		<?php
 		wp_nav_menu( array(

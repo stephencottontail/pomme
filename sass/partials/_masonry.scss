@@ -4,24 +4,16 @@
 }
 
 .masonry-brick {
-	@include make-col-ready;
+	@include masonry-brick;
 	
-	padding: $spacer;
-	
-	@include media-breakpoint-up(md) {
-		@include make-col( 6 );
-	}
-	
-	@include media-breakpoint-up(lg) {
-		@include make-col( 4 );
-	}
-	
-	@include media-breakpoint-up(xl) {
-		@include make-col( 4 );
-	}
+	padding: map-get( $spacers, 3 );
 }
 
 .gutter-sizer {
 	display: none;
 	width: map-get( $spacers, 2 );
+}
+
+.brick-sizer {
+	@include masonry-brick;
 }
