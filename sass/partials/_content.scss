@@ -59,7 +59,6 @@
 	padding: $spacer;
 	
 	@include media-breakpoint-up( md ) {
-		@include make-col-offset( 4 );
 		@include make-col( 8 );
 	}
 }
