@@ -9,14 +9,13 @@ jQuery( document ).ready( function( $ ) {
 	var masonryContainer = $( '.masonry-container' );
 	var masonryArgs = {
 		itemSelector: '.masonry-brick',
-		columnWidth: '.masonry-brick',
-		stamp: '.masonry-stamp',
+		columnWidth: '.brick-sizer',
 		gutter: '.gutter-sizer',
 		horizontalOrder: true,
 		percentPosition: true
 	};
 
-	if ( masonryContainer & ! body.hasClass( 'single' ) ) {
+	if ( masonryContainer ) {
 		masonryContainer.imagesLoaded( function() {
 			masonryContainer.masonry( masonryArgs );
 		} );

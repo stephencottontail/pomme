@@ -2,19 +2,14 @@
 	@include make-col-ready;
 	
 	padding: $spacer;
+	text-align: center;
 	
-
-	
-	.single & {
-		@include media-breakpoint-up(md) {
-			@include make-col(4);
-	
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
+	@include media-breakpoint-up(md) {
+		@include make-col(4);
+		
+		text-align: right;
 	}
-	
+
 	ul {
 		display: none;
 		list-style: none;
