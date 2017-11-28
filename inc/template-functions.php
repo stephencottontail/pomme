@@ -28,7 +28,7 @@ add_filter( 'body_class', 'pomme_body_classes' );
  * @return array
  */
 function pomme_post_classes( $classes ) {
-	if ( is_archive() || is_home() ) {
+	if ( is_archive() || is_search() || is_home() ) {
 		$classes[] = 'archive-masonry';
 	}
 	

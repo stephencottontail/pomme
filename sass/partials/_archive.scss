@@ -1,0 +1,22 @@
+.archive-header {
+	@include make-col-ready;
+	
+	padding: map-get( $spacers, 3 );
+	text-align: center;
+	
+	@include media-breakpoint-up(md) {
+		@include make-col(8);
+		
+		text-align: left;
+	}
+}
+
+.archive-title {
+	margin: 0;
+}
+
+.archive-subtitle {
+	color: $text-muted;
+	font-family: $headings-font-family;
+	margin: 0;
+}

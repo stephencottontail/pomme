@@ -25,6 +25,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @media (min-width: 992px) { .brick-sizer { flex: 0 0 33.33333%; max-width: 33.33333%; } }
 @media (min-width: 1200px) { .brick-sizer { flex: 0 0 33.33333%; max-width: 33.33333%; } }
 
+.archive-header { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
+@media (min-width: 768px) { .archive-header { flex: 0 0 66.66667%; max-width: 66.66667%; text-align: left; } }
+
+.archive-title { margin: 0; }
+
+.archive-subtitle { color: #868e96; font-family: "Crimson Text", "Georgia", serif; margin: 0; }
+
 .archive-masonry { background-color: #a42a35; border: 1px solid #a42a35; box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25); color: #f9f9f9; padding: 1rem; transition: all 0.2s ease-in-out; display: flex; align-items: flex-end; justify-content: flex-end; background-position: center center; background-size: cover; border-color: transparent; box-shadow: none; position: relative; }
 .archive-masonry:focus, .archive-masonry:hover { background-color: #972731; border-color: #972731; }
 .archive-masonry a { color: #f9f9f9; }

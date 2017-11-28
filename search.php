@@ -7,45 +7,66 @@
  * @package Pomme
  */
 
-get_header(); ?>
-
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
-
+get_header();
+?>
+	<header class="archive-header masonry-brick">
 		<?php
-		if ( have_posts() ) : ?>
+		global $wp_query;
+		
+		if ( '0' != $wp_query->found_posts ) :
+		?>
+			<h1 class="archive-title">
+				<?php
+				/* translators: %s = search query */
+				printf( __( 'Search results for &ldquo;%s&rdquo;', 'pomme' ), get_search_query() );
+				?>
+			</h1>
+			<p class="archive-subtitle search-results">
+				<?php
+				
+				if ( '1' === $wp_query->found_posts ) {
+					printf( __( '%s result', 'pomme' ), number_format_i18n( $wp_query->found_posts ) );
+				} else {
+					printf( __( '%s results', 'pomme' ), number_format_i18n( $wp_query->found_posts ) );
+				}
+				?>
+			</p>
+		<?php else : ?>
+			<h1 class="archive-title">
+				<?php
+				/* translators: %s = search query */
+				printf( __( 'No results for &ldquo;%s&rdquo;', 'pomme' ), get_search_query() );
+				?>
+			</h1>
+		<?php endif; ?>
+	</header>
+	
+	<?php
+	if ( have_posts() ) :
+	
+		/* Start the Loop */
+		while ( have_posts() ) : the_post();
 
-			<header class="page-header">
-				<h1 class="page-title"><?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'pomme' ), '<span>' . get_search_query() . '</span>' );
-				?></h1>
-			</header><!-- .page-header -->
+			/**
+			 * Run the loop for the search to output the results.
+			 * If you want to overload this in a child theme then include a file
+			 * called content-search.php and that will be used instead.
+			 */
+			get_template_part( 'template-parts/content', 'archive' );
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+		endwhile;
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+	else :
 
-			endwhile;
+		get_template_part( 'template-parts/content', 'none' );
 
-			the_posts_navigation();
+	endif;
+	?>
+</div><!-- .container.masonry-container -->
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
+<div class="container">
+	<?php the_posts_navigation(); ?>
+</div>
+	
 <?php
-get_sidebar();
 get_footer();
