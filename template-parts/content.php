@@ -11,15 +11,14 @@
 
 <div class="masonry-brick single-masonry-brick masonry-stamp">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<figure class="entry-thumbnail">
+				<?php the_post_thumbnail(); ?>
+			</figure>
+		<?php endif; ?>
+		
 		<header class="entry-header">
-			<?php
-			the_title( '<h1 class="entry-title">', '</h1>' );
-
-			if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php pomme_posted_on(); ?>
-				</div><!-- .entry-meta -->
-			<?php endif; ?>
+			<?php pomme_entry_header(); ?>
 		</header><!-- .entry-header -->
 	
 		<div class="entry-content">

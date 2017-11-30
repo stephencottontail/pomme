@@ -36,21 +36,35 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .archive-masonry:focus, .archive-masonry:hover { background-color: #972731; border-color: #972731; }
 .archive-masonry a { color: #f9f9f9; }
 .archive-masonry .overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(21, 21, 21, 0.25); }
-.archive-masonry .entry-header { position: relative; flex: 0 0 60%; margin-top: 3rem; text-align: center; word-break: break-word; z-index: 10; }
-@media (min-width: 768px) { .archive-masonry .entry-header { flex-basis: 40%; } }
-.archive-masonry .entry-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 1.25rem; font-weight: bold; margin: 0; }
-.archive-masonry .entry-date { display: block; font-size: 0.875rem; }
 .archive-masonry a { text-decoration: none; }
 .archive-masonry a:hover { text-decoration: underline; }
 
 .single-masonry-brick { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; }
 @media (min-width: 768px) { .single-masonry-brick { flex: 0 0 66.66667%; max-width: 66.66667%; } }
 
+.entry-header { word-break: break-word; }
+.archive-masonry .entry-header { position: relative; flex: 0 0 60%; margin-top: 3rem; padding: 0; text-align: center; z-index: 10; }
+@media (min-width: 768px) { .archive-masonry .entry-header { flex-basis: 40%; } }
+.single .entry-header { background-color: #a42a35; border: 1px solid #a42a35; box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25); color: #f9f9f9; padding: 1rem; transition: all 0.2s ease-in-out; box-shadow: none; margin-bottom: 1rem; }
+.single .entry-header:focus, .single .entry-header:hover { background-color: #972731; border-color: #972731; }
+.single .entry-header a { color: #f9f9f9; }
+
+.entry-title { margin: 0; }
+.archive-masonry .entry-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 1.25rem; font-weight: bold; }
+.entry-title .single { font-size: 6rem; }
+
+.entry-date { display: block; font-size: 0.875rem; }
+
+.entry-footer { border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; margin: 1rem 0; padding: 1rem 0; }
+.entry-footer span { display: block; }
+
 .site-branding { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
 @media (min-width: 768px) { .site-branding { flex: 0 0 66.66667%; max-width: 66.66667%; text-align: left; } }
 .site-branding a { text-decoration: none; font-weight: bold; letter-spacing: -1px; }
 
 .site-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 4.5rem; font-weight: bold; letter-spacing: -2px; line-height: 1.5; margin: 0; }
+
+figure, img { height: auto; max-width: 100%; margin: 0; }
 
 .site-navigation { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
 @media (min-width: 768px) { .site-navigation { flex: 0 0 33.33333%; max-width: 33.33333%; text-align: right; } }

@@ -21,15 +21,7 @@ if ( has_post_thumbnail() ) {
 		<?php endif; ?>
 		
 		<header class="entry-header">
-			<?php
-			the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-			
-			printf( '<time class="entry-date" datetime="%s"><a href="%s" rel="bookmark">%s</a></time>',
-				esc_attr( get_the_date( 'c' ) ),
-				esc_url( get_permalink() ),
-				esc_html( get_the_date() )
-			);
-			?>
+			<?php pomme_entry_header(); ?>
 		</header><!-- .entry-header -->
 	</article><!-- #post-<?php the_ID(); ?> -->
 </div><!-- .masonry-brick -->

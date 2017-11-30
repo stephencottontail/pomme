@@ -19,31 +19,6 @@
 		background-color: rgba( theme-color( 'dark' ), 0.25 );
 	}
 	
-	.entry-header {
-		position: relative;
-		flex: 0 0 60%;
-		margin-top: map-get( $spacers, 5 );
-		text-align: center;
-		word-break: break-word;
-		z-index: 10;
-		
-		@include media-breakpoint-up( md ) {
-			flex-basis: 40%;
-		}
-	}
-	
-	.entry-title {
-		font-family: $font-family-base;
-		font-size: $font-size-lg;
-		font-weight: bold;
-		margin: 0;
-	}
-	
-	.entry-date {
-		display: block;
-		font-size: $font-size-sm;
-	}
-	
 	a {
 		text-decoration: none;
 		
@@ -60,5 +35,59 @@
 	
 	@include media-breakpoint-up( md ) {
 		@include make-col( 8 );
+	}
+}
+
+.entry-header {
+	word-break: break-word;
+	
+	.archive-masonry & {
+		position: relative;
+		flex: 0 0 60%;
+		margin-top: map-get( $spacers, 5 );
+		padding: 0;
+		text-align: center;
+		z-index: 10;
+		
+		@include media-breakpoint-up( md ) {
+			flex-basis: 40%;
+		}
+	}
+	
+	.single & {
+		@include big-red-box;
+		
+		box-shadow: none;
+		margin-bottom: map-get( $spacers, 3 );
+	}
+}
+
+.entry-title {
+	margin: 0;
+	
+	.archive-masonry & {
+		font-family: $font-family-base;
+		font-size: $font-size-lg;
+		font-weight: bold;
+	}
+	
+	.single {
+		font-size: $display1-size;
+	}
+}
+
+.entry-date {
+	display: block;
+	font-size: $font-size-sm;
+}
+
+.entry-footer {
+	border-top: 1px solid gray( '200' );
+	border-bottom: 1px solid gray( '200' );
+	margin: map-get( $spacers, 3 ) 0;
+	padding: map-get( $spacers, 3 ) 0;
+	
+	span {
+		display: block;
 	}
 }
