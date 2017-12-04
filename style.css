@@ -101,3 +101,6 @@ figure, img { height: auto; max-width: 100%; margin: 0; }
 .wp-caption { margin: 0; max-width: 100%; height: auto; }
 
 .wp-caption-text { color: #868e96; }
+
+/* temp */
+textarea { max-width: 100%; }
