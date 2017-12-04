@@ -42,10 +42,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .single-masonry-brick { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; }
 @media (min-width: 768px) { .single-masonry-brick { flex: 0 0 66.66667%; max-width: 66.66667%; } }
 
-.entry-header { word-break: break-word; }
-.archive-masonry .entry-header { position: relative; flex: 0 0 60%; margin-top: 3rem; padding: 0; text-align: center; z-index: 10; }
+.entry-header { margin-bottom: 3rem; word-break: break-word; }
+.archive-masonry .entry-header { position: relative; flex: 0 0 60%; margin-top: 3rem; margin-bottom: 0; padding: 0; text-align: center; z-index: 10; }
 @media (min-width: 768px) { .archive-masonry .entry-header { flex-basis: 40%; } }
-.single .entry-header { background-color: #a42a35; border: 1px solid #a42a35; box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25); color: #f9f9f9; padding: 1rem; transition: all 0.2s ease-in-out; box-shadow: none; margin-bottom: 1rem; }
+.single .entry-header { background-color: #a42a35; border: 1px solid #a42a35; box-shadow: 4px 4px 2px rgba(21, 21, 21, 0.25); color: #f9f9f9; padding: 1rem; transition: all 0.2s ease-in-out; box-shadow: none; }
 .single .entry-header:focus, .single .entry-header:hover { background-color: #972731; border-color: #972731; }
 .single .entry-header a { color: #f9f9f9; }
 
@@ -55,8 +55,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .entry-date { display: block; font-size: 0.875rem; }
 
-.entry-footer { border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef; margin: 1rem 0; padding: 1rem 0; }
-.entry-footer span { display: block; }
+.entry-footer { border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin: 3rem 0 1rem; padding: 1rem 0; }
+.entry-footer .meta-info { display: block; font-weight: bold; }
 
 .site-branding { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
 @media (min-width: 768px) { .site-branding { flex: 0 0 66.66667%; max-width: 66.66667%; text-align: left; } }

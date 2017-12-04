@@ -39,12 +39,14 @@
 }
 
 .entry-header {
+	margin-bottom: map-get( $spacers, 5 );
 	word-break: break-word;
 	
 	.archive-masonry & {
 		position: relative;
 		flex: 0 0 60%;
 		margin-top: map-get( $spacers, 5 );
+		margin-bottom: 0;
 		padding: 0;
 		text-align: center;
 		z-index: 10;
@@ -58,7 +60,6 @@
 		@include big-red-box;
 		
 		box-shadow: none;
-		margin-bottom: map-get( $spacers, 3 );
 	}
 }
 
@@ -82,12 +83,13 @@
 }
 
 .entry-footer {
-	border-top: 1px solid gray( '200' );
-	border-bottom: 1px solid gray( '200' );
-	margin: map-get( $spacers, 3 ) 0;
+	border-top: 1px solid gray( '300' );
+	border-bottom: 1px solid gray( '300' );
+	margin: map-get( $spacers, 5 ) 0 map-get( $spacers, 3 );
 	padding: map-get( $spacers, 3 ) 0;
 	
-	span {
+	.meta-info {
 		display: block;
+		font-weight: bold;
 	}
 }

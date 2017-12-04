@@ -37,7 +37,7 @@ if ( ! function_exists( 'pomme_entry_footer' ) ) :
 		);
 		
 		/* translators: %s = post author */
-		printf( _x( 'by %s', 'post author', 'pomme' ), $author );
+		printf( '<span class="meta-info byline">' .  _x( 'by %s', 'post author', 'pomme' ) . '</span>', $author );
 		
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
@@ -45,14 +45,14 @@ if ( ! function_exists( 'pomme_entry_footer' ) ) :
 			$categories_list = get_the_category_list( __( ', ', 'pomme' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'pomme' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="meta-info cat-links">' . __( 'Posted in %1$s', 'pomme' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', _x( ', ', 'list item separator', 'pomme' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'pomme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="meta-info tags-links">' . __( 'Tagged %1$s', 'pomme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -88,7 +88,7 @@ if ( ! function_exists( 'pomme_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">',
+			'<span class="meta-info edit-link">',
 			'</span>'
 		);
 	}
