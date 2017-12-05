@@ -1,0 +1,54 @@
+.navigation {
+	border-top: 1px solid gray( '400' );
+	border-bottom: 1px solid gray( '400' );
+	margin: map-get( $spacers, 5 ) map-get( $spacers, 2 );
+	padding: map-get( $spacers, 3 ) 0;
+}
+
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	a {
+		@include big-red-box;
+		
+		display: block;
+		padding-left: map-get( $spacers, 5 );
+		padding-right: map-get( $spacers, 5 );
+		text-decoration: none;
+		
+		@include hover {
+			box-shadow: none;
+		}
+	}
+	
+	.nav-previous {
+		flex-basis: 100%;
+		margin-bottom: map-get( $spacers, 3 );
+		text-align: center;
+		
+		@include media-breakpoint-up( md ) {
+			flex-basis: auto;
+			margin-bottom: 0;
+			max-width: 50%;
+		}
+	}
+	
+	.nav-next {
+		flex-basis: 100%;
+		text-align: center;
+		
+		@include media-breakpoint-up( md ) {
+			flex-basis: auto;
+			margin-left: auto;
+			max-width: 50%;
+		}
+	}
+}
+
+.nav-title {
+	display: block;
+	font-weight: bold;
+	text-transform: lowercase;
+}

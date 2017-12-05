@@ -19,13 +19,15 @@ get_header();
 
 <div class="container">
 	<?php
-	the_post_navigation();
+	the_post_navigation( array(
+		'prev_text' => sprintf( '<span class="nav-title">%s</span>%%title', __( 'Previous Post', 'pomme' ) ),
+		'next_text' => sprintf( '<span class="nav-title">%s</span>%%title', __( 'Next Post', 'pomme' ) )
+	) );
 	
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) :
 		comments_template();
 	endif;
-	
 	?>
 </div>
 

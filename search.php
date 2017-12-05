@@ -65,7 +65,12 @@ get_header();
 </div><!-- .container.masonry-container -->
 
 <div class="container">
-	<?php the_posts_navigation(); ?>
+	<?php
+	the_posts_navigation( array(
+		'prev_text' => __( '&laquo; Older Posts', 'pomme' ),
+		'next_text' => __( 'Newer Posts &raquo;', 'pomme' )
+	) );
+	?>
 </div>
 	
 <?php
