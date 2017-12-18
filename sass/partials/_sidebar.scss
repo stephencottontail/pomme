@@ -1,0 +1,8 @@
+.widget-area {
+	padding: map-get( $spacers, 3 );
+	
+	@include media-breakpoint-up( md ) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}

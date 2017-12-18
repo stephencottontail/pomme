@@ -12,6 +12,11 @@
 ?>
 
 	<div class="container">
+		<?php
+		if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) ) {
+			get_sidebar();
+		}
+		?>
 		<footer id="colophon" class="site-footer">
 			<div class="site-info">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'pomme' ) ); ?>"><?php

@@ -58,6 +58,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .entry-footer { border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin: 3rem 0 1rem; padding: 1rem 0; }
 .entry-footer .meta-info { display: block; font-weight: bold; }
 
+.site-info { border-top: 1px solid #ced4da; padding: 1rem; text-align: right; }
+
 .site-branding { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
 @media (min-width: 768px) { .site-branding { flex: 0 0 66.66667%; max-width: 66.66667%; text-align: left; } }
 .site-branding a { text-decoration: none; font-weight: bold; letter-spacing: -1px; }
@@ -91,6 +93,9 @@ figure, img { height: auto; max-width: 100%; margin: 0; }
 @media (min-width: 768px) { .nav-links .nav-next { flex-basis: auto; margin-left: auto; max-width: 50%; } }
 
 .nav-title { display: block; font-weight: bold; text-transform: lowercase; }
+
+.widget-area { padding: 1rem; }
+@media (min-width: 768px) { .widget-area { padding-top: 0; padding-bottom: 0; } }
 
 .screen-reader-text { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); border: 0; }
 .screen-reader-text:active, .screen-reader-text:focus { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; clip-path: none; }
