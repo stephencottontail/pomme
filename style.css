@@ -50,7 +50,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .single .entry-header a { color: #f9f9f9; }
 
 .entry-title { margin: 0; }
-.archive-masonry .entry-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 1.25rem; font-weight: bold; }
+.archive-masonry .entry-title { font-family: "Alegreya Sans", "Helvetica Neue", sans-serif; font-size: 1.25rem; font-weight: bold; }
 .entry-title .single { font-size: 6rem; }
 
 .entry-date { display: block; font-size: 0.875rem; }
@@ -64,7 +64,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @media (min-width: 768px) { .site-branding { flex: 0 0 66.66667%; max-width: 66.66667%; text-align: left; } }
 .site-branding a { text-decoration: none; font-weight: bold; letter-spacing: -1px; }
 
-.site-title { font-family: "Catamaran", "Helvetica Neue", sans-serif; font-size: 4.5rem; font-weight: bold; letter-spacing: -2px; line-height: 1.5; margin: 0; }
+.site-title { font-family: "Alegreya Sans", "Helvetica Neue", sans-serif; font-size: 4.5rem; font-weight: bold; letter-spacing: -2px; line-height: 1.5; margin: 0; }
 
 figure, img { height: auto; max-width: 100%; margin: 0; }
 

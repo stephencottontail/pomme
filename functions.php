@@ -157,9 +157,9 @@ function pomme_google_fonts() {
 	$fonts = array();
 	$fonts_url = '';
 
-	/* translators: If there are characters in your language that are not supported by Catamaran, translate this to 'off'. Do not translate into your own language. */
-	if ( 'off' !== _x( 'on', 'Catamaran font: on or off', 'pomme' ) ) {
-		$fonts[] = 'Catamaran:300,700,900';
+	/* translators: If there are characters in your language that are not supported by Alegreya Sans, translate this to 'off'. Do not translate into your own language. */
+	if ( 'off' !== _x( 'on', 'Alegreya Sans font: on or off', 'pomme' ) ) {
+		$fonts[] = 'Alegreya Sans:300,300i,700,700i,900,900i';
 	}
 
 	/* translators: If there are characters in your language that are not supported by Crimson Text, translate this to 'off'. Do not translate into your own language. */
