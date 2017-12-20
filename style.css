@@ -87,10 +87,14 @@ figure, img { height: auto; max-width: 100%; margin: 0; }
 .nav-links a:focus, .nav-links a:hover { background-color: #972731; border-color: #972731; }
 .nav-links a a { color: #f9f9f9; }
 .nav-links a:hover { box-shadow: none; }
-.nav-links .nav-previous { flex-basis: 100%; margin-bottom: 1rem; text-align: center; }
-@media (min-width: 768px) { .nav-links .nav-previous { flex-basis: auto; margin-bottom: 0; max-width: 50%; } }
-.nav-links .nav-next { flex-basis: 100%; text-align: center; }
-@media (min-width: 768px) { .nav-links .nav-next { flex-basis: auto; margin-left: auto; max-width: 50%; } }
+
+.nav-previous { flex-basis: 100%; text-align: center; }
+@media (min-width: 768px) { .nav-previous { flex-basis: auto; margin-bottom: 0; max-width: 50%; } }
+
+.nav-next { flex-basis: 100%; text-align: center; }
+.nav-previous + .nav-next { margin-top: 1rem; }
+@media (min-width: 768px) { .nav-previous + .nav-next { margin-top: 0; } }
+@media (min-width: 768px) { .nav-next { flex-basis: auto; margin-left: auto; max-width: 50%; } }
 
 .nav-title { display: block; font-weight: bold; text-transform: lowercase; }
 
