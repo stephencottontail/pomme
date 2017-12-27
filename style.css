@@ -14,16 +14,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .masonry-container { padding: 0; position: relative; }
 
 .masonry-brick { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; }
-@media (min-width: 768px) { .masonry-brick { flex: 0 0 50%; max-width: 50%; } }
-@media (min-width: 992px) { .masonry-brick { flex: 0 0 33.33333%; max-width: 33.33333%; } }
-@media (min-width: 1200px) { .masonry-brick { flex: 0 0 33.33333%; max-width: 33.33333%; } }
+@media (min-width: 768px) { .masonry-brick { flex: 0 0 33.33333%; max-width: 33.33333%; } }
 
 .gutter-sizer { display: none; width: 0.5rem; }
 
 .brick-sizer { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; }
-@media (min-width: 768px) { .brick-sizer { flex: 0 0 50%; max-width: 50%; } }
-@media (min-width: 992px) { .brick-sizer { flex: 0 0 33.33333%; max-width: 33.33333%; } }
-@media (min-width: 1200px) { .brick-sizer { flex: 0 0 33.33333%; max-width: 33.33333%; } }
+@media (min-width: 768px) { .brick-sizer { flex: 0 0 33.33333%; max-width: 33.33333%; } }
 
 .archive-header { position: relative; width: 100%; min-height: 1px; padding-right: 0.5rem; padding-left: 0.5rem; padding: 1rem; text-align: center; }
 @media (min-width: 768px) { .archive-header { flex: 0 0 66.66667%; max-width: 66.66667%; text-align: left; } }
